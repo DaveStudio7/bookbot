@@ -1,3 +1,5 @@
+from stats import get_num_words
+
 def main():
     book_path = "books/frankenstein.txt"
     text = get_book_text(book_path)
@@ -33,11 +35,6 @@ def get_num_characters(text):
             else:
                 char_count[char] = 1
     return char_count
-
-
-def get_num_words(text):
-    words = text.split()
-    return len(words)
 
 
 def get_book_text(path):
